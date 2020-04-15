@@ -34,3 +34,63 @@ img{
     display: grid;
     grid-gap: 20px;
 }
+
+.menubar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: thin solid black;
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a{
+    background: var(--primary);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.navbar a:hover{
+    background: var(--dark);
+    color: var(--light);
+}
+
+.recent-feed{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'a b c'
+    'd e f';
+    border-bottom: thin solid black;
+}
+
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+
