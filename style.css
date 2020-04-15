@@ -13,8 +13,8 @@ html{
 
 
 body{
+    margin: 0;
     background-color: #ccc;
-    margin:30px 50px;
     line-height: 1.4;
 }
 
@@ -36,9 +36,11 @@ img{
 }
 
 .menubar{
+    background: #919191;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: thin solid black;
+    box-shadow: 0 2px 4px black;
 }
 
 
