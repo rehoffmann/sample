@@ -14,7 +14,7 @@ html{
 
 body{
     margin: 0;
-    background-color: #ccc;
+    background-color: #FAFAFA;
     line-height: 1.4;
 }
 
@@ -36,31 +36,56 @@ img{
 }
 
 .menubar{
-    background: #919191;
+    background: var(--light);
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0 2px 4px black;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 1px 4px black;
+    overflow: hidden;
+    position:sticky;
+    top: 0;
+}
+
+.menuicon{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo{
+    display:inline-block;
+    margin: auto;
+}
+.logo img{
+    display: block;
+  max-height: 50px;
+  width: auto;
+  height: auto;
 }
 
 
 .navbar ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin:0;
     padding: 0;
     list-style: none;
+    margin-right: 10px;
+   margin-bottom: 25px;
 }
 
 .navbar a{
-    background: var(--primary);
-    display: inline-block;
+    background: #fff;
+    display: flex;
+    height: 100%;
     text-decoration: none;
     padding: 0.8rem;
-    text-align: center;
     color: var(--dark);
     text-transform: lowercase;
     font-size: 1.1rem;
-    box-shadow: var(--shadow);
+    
+    justify-items: center;
+    align-items: center;
 }
 
 .navbar a:hover{
